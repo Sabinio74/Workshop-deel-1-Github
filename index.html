@@ -1,14 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
-    <title>Workshop Github deel 1</title>
+    <title>Workshop Github deel 1 met CSS oefeningen uit Edhub</title>
 </head>
 <body>
+
 <ul>
     <li>Na wijziging gebruik je git add .</li>
     <li>Dan git commit -m ".." met beschrijving tussen ".."</li>
     <li>En dan git push origin main</li>
 </ul>
+
+<section>
+    <!--    2 highlighted article en 1 zonder-->
+    <article class="highlighted-article">
+        <h2>Opvallendheden</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, nam?</p>
+    </article>
+
+    <article class="highlighted-article">
+        <h2>Oorzaken</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, nam?</p>
+    </article>
+
+    <article>
+        <h2>Behandeling</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, nam?</p>
+    </article>
+</section>
+
+<h2>Inhoudsopgave</h2>
+<ul>
+    <li><a href="#table-of-contents">Inleiding</a></li>
+    <li><a href="#problem">Probleemstelling</a></li>
+    <li><a href="#results">Resultaten</a></li>
+    <li><a href="#conclusion">Conclusie</a></li>
+</ul>
+
+<h3 id="table-of-contents">Inleiding</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur at consectetur corporis debitis
+    dignissimos doloremque dolores earum enim esse et excepturi explicabo facere facilis fuga illo ipsum iste magnam
+    minima nam neque nesciunt nisi nostrum, obcaecati optio qui quia quo repellat sapiente sit tempora tempore tenetur
+    totam vel voluptatem voluptatibus, voluptatum! At ducimus exercitationem ipsam mollitia neque nobis officia omnis,
+    provident, quo reprehenderit rerum sed voluptatibus! Aliquid aspernatur commodi distinctio ea facere magni maxime,
+    minus, molestiae molestias nisi officia perspiciatis quae quasi reprehenderit sequi sit sunt tenetur totam ut
+    voluptas! Ab, blanditiis illum magni maiores quas qui quos sunt!</p>
+
+<h3 id="problem">Probleemstelling</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam at commodi deserunt dicta eaque
+    exercitationem expedita id illo illum in iure iusto natus nulla odio possimus, sequi similique, sint tempore
+    temporibus veniam veritatis voluptatem. Alias aliquid atque cum cupiditate dignissimos dolorem eligendi ex
+    exercitationem facilis fugiat impedit incidunt iste iusto, laborum minus molestiae molestias perferendis
+    perspiciatis quis recusandae reprehenderit sequi sint, suscipit temporibus ullam vero voluptas! A ab alias aliquam
+    aut expedita facere fugiat illum impedit labore libero magni maiores neque nobis, obcaecati officia quasi quibusdam
+    quidem rerum sapiente tempore veritatis vero voluptate. Delectus, odit, sequi. Accusantium, laboriosam,
+    nesciunt?</p>
+
+<h3 id="results">Resultaten</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam eius exercitationem laboriosam natus nesciunt
+    obcaecati odio quaerat recusandae voluptas voluptates. At corporis cupiditate deserunt dolore est et, fuga id illo
+    ipsam iste nam porro quae, quaerat quia voluptatibus? A asperiores, consequuntur delectus dolore dolorem eius enim
+    exercitationem fuga ipsum libero maiores minima minus modi molestias nulla obcaecati quasi qui quod ullam vel. Eos
+    nemo rerum velit. Adipisci beatae eos illum labore minima, nulla rem repellendus sunt. Aliquam amet atque blanditiis
+    consectetur earum hic illo iste minus molestias nihil numquam odit omnis quaerat quidem reprehenderit, repudiandae
+    similique sint suscipit veniam vitae?</p>
+
+<h3 id="conclusion">Conclusie</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda autem commodi culpa cupiditate deleniti dolor
+    dolorem dolore
+<p>
+    <button type="button">
+        Ik sta buiten een formulier!
+    </button>
+</p>
+<p>
+    <button type="button" disabled="true">
+        Deze knop is niet klikbaar
+    </button>
+</p>
+
+<p>Verschillende manieren van gegevens nesten:</p>
+
+<p>Vb1 het input-element genest binnen het label-element. Het for-attribuut van het label-element verwijst naar de id
+    van het input-element. Deze basis is minder handig??:
+
+    <label for="gebruikersnaam">Gebruikersnaam:</label>
+    <input type="text" id="gebruikersnaam" name="gebruikersnaam"/>
+
+
+<p>Vb2 In dit voorbeeld wordt het input-element direct binnen het label-element geplaatst zonder het gebruik van het
+    for-attribuut. De tekst "Gebruikersnaam:" wordt direct in het label-element opgenomen.</p>
+
+<label>
+    Gebruikersnaam:
+    <input type="text" id="gebruikersnaam" name="gebruikersnaam"/>
+</label>
+
+
+<p>vb3 Hier wordt het input-element genest binnen het label-element, en het for-attribuut wordt gebruikt om te verwijzen
+    naar de id van het input-element. Het label-element heeft ook een class-attribuut voor opmaakdoeleinden.</p>
+
+<label for="gebruikersnaam" class="label-stijl">gebruikersnaam:</label>
+<input type="password" id="gebruikersnaam" name="gebruikersnaam">
+
+<p></p>
+
+<form onsubmit="hier hebben we javascript voor nodig"/>
+<fieldset>
+    <legend>Gegevens</legend>
+    <label>
+        Naam:
+        <input type="text" id="name-field" name="name"/>
+    </label>
+    <p></p>
+    <label>
+        Email:
+        <input type="email" id="email-field" name="email"/>
+    </label>
+</fieldset>
+
+<fieldset>
+    <legend>Jouw review</legend>
+    <label for="found">Hoe heb je dit artikel gevonden?</label>
+    <select name="found" id="found">
+        <option value="different">anders</option>
+        <option value="friend">Vriend</option>
+        <option value="ad">Advertentie</option>
+        <option value="google">Google</option>
+    </select>
+    <p></p>
+    <label>
+        Zou je meer van dit soort artikelen willen zien?<p>
+    </p>
+        <input type="radio" name="more" value="no"/> Nee
+        <input type="radio" name="more" value="yes"/> Ja
+        <input type="radio" name="more" value="maybe"/> Misschien
+    </label>
+    <p></p>
+
+    <label for="remarks">Opmerkingen:<br/></label>
+    <textarea placeholder="Wat vond je van dit artikel?" id="remarks" name="remarks" rows="4"
+              cols="50"></textarea>
+
+    <label for="newsletter">
+        <input type="checkbox" id="newsletter" name="newsletter"/>
+        Schrijf me in voor de nieuwsbrief
+    </label>
+    <br><button type="submit">Versturen</button>
+
+
+
+</fieldset>
+</form>
+
+
+Volgens Edhub:
+<p></p>
+
+<!-- label en input los van elkaar -->
+<label for="user-email-field">Email:</label>
+<input type="email" id="user-email-field"/>
+
+<p></p>
+
+<!-- label en input genest -->
+<label for="user-newsletter-field">
+    <input type="checkbox" id="user-newsletter-field"/>
+    Ik wil de nieuwsbrief ontvangen
+</label>
+
+
+<p></p>
+
+
+<h1>The Main Languages of the Web</h1>
+
+<p>HTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page, and consists
+    of a series of elements. HTML elements tell the browser how to display the content.</p>
+
+<hr>
+
+<p>CSS is a language that describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves
+    a lot of work, because it can control the layout of multiple web pages all at once.</p>
+
+
 </body>
 </html>

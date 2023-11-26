@@ -1,0 +1,19 @@
+h1 {
+    color: blue;
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+/* pseudo classes : gevolgd door status*/
+ul>li{
+    color: red;
+}
+
+a:visited {
+    color: red;
+}
+
+a:link {
+    color: deeppink;
+}
